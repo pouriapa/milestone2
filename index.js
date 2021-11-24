@@ -22,9 +22,11 @@ app.post("/create", (req, res) => {
   const favoriteBooks = favoritebooks.split(',')
   const favoriteArtists = favoriteartists.split(',')
 
-console.log(favoriteBooks)
- 
-
+/* Sorry Armaan i didn't have enough time to go through the coding of the rest and 
+i just extracted some info from the form and tried to parse through it. 
+could not make the file and save the info porperly to the file and the read from the files based off the ids 
+*/
+  console.log(favoriteBooks)
   res.render("homepage" , {fullname, firstname, lastname, favoriteBooks, favoriteArtists, githuburl, twitterurl, aboutme})
 
 })
@@ -41,3 +43,4 @@ app.get("/:id/photos", (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server now is running at http://localhost:${PORT} 🚀`);
 });
+
